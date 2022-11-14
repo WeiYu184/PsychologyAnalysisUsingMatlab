@@ -17,8 +17,7 @@ for i=1:len_sub
     EEG = eeg_checkset( EEG );
     EEG = pop_editset(EEG, 'subject', sub{i}, 'condition', 'os', 'group', '2');
     EEG = eeg_checkset( EEG );
-    EEG=pop_chanedit(EEG, 'lookup','D:\apps\matlab\toolbox\eeglab2019_0\plugins\dipfit\standard_BESA\standard-10-5-cap385.elp','append',1,'changefield',{2 'labels' 'FCz'},'lookup', ...
-    'D:\apps\matlab\toolbox\eeglab2019_0\plugins\dipfit\standard_BESA\standard-10-5-cap385.elp');
+    EEG=pop_chanedit(EEG, 'lookup','D:\apps\matlab\toolbox\eeglab2019_0\plugins\dipfit\standard_BESA\standard-10-5-cap385.elp','append',1,'changefield',{2 'labels' 'FCz'},'lookup', '...\standard-10-5-cap385.elp');
     EEG = eeg_checkset( EEG );
     EEG = pop_reref( EEG, [22 54] ,'refloc',struct('labels',{'FCz'},'type',{''},'theta',{0},'radius',{0.12662},'X',{32.9279},'Y',{0},'Z',{78.363},'sph_theta',{0},'sph_phi',{67.208},'sph_radius',{85},'urchan',{2},'ref',{''},'datachan',{0}),'keepref','on');
     EEG = eeg_checkset( EEG );
